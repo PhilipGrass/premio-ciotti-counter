@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Header } from "./components/Header";
+import { Row } from "./components/Row";
 
-function App() {
+type dataProps = {
+  id: number;
+  author: string;
+  title: string;
+  publisher: string;
+}[];
+
+const data: dataProps = [
+  {
+    id: 0,
+    author: "Ezio Luzzi",
+    title: "Tutto il mio calcio minuto per minuto",
+    publisher: "Baldini & Castoldi",
+  },
+  {
+    id: 1,
+    author: "Andrea Masciaga",
+    title: "Ma restiamo con i piedi per terra",
+    publisher: "Rizzoli",
+  },
+  {
+    id: 2,
+    author: "Andriy Shevchenko, Alessandro Alciato",
+    title: "Forza gentile",
+    publisher: "Baldini & Castoldi",
+  },
+];
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      {data.map((e) => {
+        return (
+          <Row author={e.author} title={e.title} publisher={e.publisher} />
+        );
+      })}
+    </>
   );
-}
+};
 
 export default App;
