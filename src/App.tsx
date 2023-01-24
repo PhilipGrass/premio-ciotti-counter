@@ -12,21 +12,21 @@ type dataProps = {
 const data: dataProps = [
   {
     id: 0,
-    author: "Ezio Luzzi",
-    title: "Tutto il mio calcio minuto per minuto",
-    publisher: "Baldini & Castoldi",
+    author: "Fulvio Valbusa (con Serena Marchi)",
+    title: "Randagio",
+    publisher: "Fandango Libri",
   },
   {
     id: 1,
-    author: "Andrea Masciaga",
-    title: "Ma restiamo con i piedi per terra",
-    publisher: "Rizzoli",
+    author: "Olivier Giroud",
+    title: "Crederci, sempre",
+    publisher: "Baldini & Castoldi",
   },
   {
     id: 2,
-    author: "Andriy Shevchenko, Alessandro Alciato",
-    title: "Forza gentile",
-    publisher: "Baldini & Castoldi",
+    author: "Andrea Marcolongo",
+    title: "De arte gymnastica",
+    publisher: "Editori Laterza",
   },
 ];
 
