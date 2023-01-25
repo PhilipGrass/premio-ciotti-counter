@@ -12,7 +12,7 @@ type dataProps = {
 const data: dataProps = [
   {
     id: 0,
-    author: "Fulvio Valbusa (con Serena Marchi)",
+    author: "Fulvio Valbusa",
     title: "Randagio",
     publisher: "Fandango Libri",
   },

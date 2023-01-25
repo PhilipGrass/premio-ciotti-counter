@@ -2,6 +2,7 @@ import React from "react";
 import bpm from "../assets/images/banco-bpm.jpg";
 import coop from "../assets/images/coop-lombardia.jpg";
 import panathlon from "../assets/images/panathlon.jpeg";
+import sportesalute from "../assets/images/sportesalute.png";
 import styles from "../app.module.css";
 
 export const Header = () => {
@@ -17,14 +18,13 @@ export const Header = () => {
       <div className={styles.rightColumnHeader}>
         <div className={styles.otherLogoContainer}>
           <img
-            className={styles.coopLogo}
-            src={coop}
-            alt="Logo Coop Lombardia"
+            className={styles.sportesaluteLogo}
+            src={sportesalute}
+            alt="Logo Sport e salute"
           />
-          <img className={styles.bpmLogo} src={bpm} alt="Logo Banca BPM" />
         </div>
         <div className={styles.headerTitle}>
-          Premio di letteratura sportiva "Sandro Ciotti" 2021
+          Premio letterario "Sandro Ciotti" - 2ᵃ edizione
         </div>
       </div>
     </div>

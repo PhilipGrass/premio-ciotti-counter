@@ -14,6 +14,7 @@ export const CounterButton: FunctionComponent<CounterButtonProps> = (props) => {
       onClick={() => {
         if (props.value) props.onClick(props.value);
       }}
+      style={{cursor: "pointer"}}
     >
       <div className="child">{props.label}</div>
     </div>
